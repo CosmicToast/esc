@@ -1,0 +1,5 @@
+*.o
+/esc
+/ecopy
+/epaste
+/esgr
