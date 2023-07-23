@@ -2,7 +2,7 @@ CC ?= cc
 CFLAGS ?= -Os -pipe
 
 SRC := main.c util.c globals.c names.c \
-	   c0.c sgr.c osc52.c
+	   c0.c c1.c sgr.c osc52.c
 OBJ := ${SRC:.c=.o}
 
 esc: $(OBJ)

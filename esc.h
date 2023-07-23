@@ -19,6 +19,7 @@ escmain findesc(const char*);
 
 // control sets
 EXPORT(c0);
+EXPORT(c1);
 
 // SGR (CSI -> \x6d)
 EXPORT(sgr);
