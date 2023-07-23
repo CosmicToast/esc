@@ -7,6 +7,9 @@ struct escname {
 };
 
 struct escname names[] = {
+	// C0 set
+	{"c0", esc_c0},
+	{"C0", esc_c0},
 	// SGR (CSI -> \x6d)
 	{"sgr",   esc_sgr},
 	{"color", esc_sgr},

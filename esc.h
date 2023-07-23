@@ -15,10 +15,16 @@ size_t readall(char **dst, FILE *src);
 // commands
 typedef int (*escmain)(int, char*[]);
 escmain findesc(const char*);
+#define EXPORT(x) int esc_##x (int, char*[])
+
+// control sets
+EXPORT(c0);
 
 // SGR (CSI -> \x6d)
-int esc_sgr(int, char*[]);
+EXPORT(sgr);
 
 // OSC 52
-int esc_copy(int, char*[]);
-int esc_paste(int, char*[]);
+EXPORT(copy);
+EXPORT(paste);
+
+#undef EXPORT
