@@ -21,6 +21,9 @@ escmain findesc(const char*);
 EXPORT(c0);
 EXPORT(c1);
 
+// cursor control
+EXPORT(cursor);
+
 // SGR (CSI -> \x6d)
 EXPORT(sgr);
 

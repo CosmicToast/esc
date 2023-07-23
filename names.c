@@ -12,6 +12,8 @@ struct escname names[] = {
 	{"C0", esc_c0},
 	{"c1", esc_c1},
 	{"C1", esc_c1},
+	// cursor functions
+	{"cursor", esc_cursor},
 	// SGR (CSI -> \x6d)
 	{"sgr",   esc_sgr},
 	{"color", esc_sgr},
