@@ -140,8 +140,10 @@ static int c0_print(const char *name) {
 }
 
 int esc_c0(int argc, char *argv[]) {
-	if (argc > 1) {
-		return c0_print(argv[1]) ? 0 : 127;
+	if (argc == 1) return 127;
+	while (argc > 1) {
+		if (!c0_print(*(++argv))) return 127;
+		argc--;
 	}
-	return 127;
+	return 0;
 }
